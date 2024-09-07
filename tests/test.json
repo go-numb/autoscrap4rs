@@ -1,0 +1,97 @@
+[
+    {
+        "name": "Task 1",
+        "actions": [
+            {
+                "GoTo": {
+                    "url": "https://example.com"
+                }
+            },
+            {
+                "Click": {
+                    "selector": "#login-button"
+                }
+            }
+        ]
+    },
+    {
+        "name": "Task 2",
+        "actions": [
+            {
+                "Login": {
+                    "url": "https://example.com/login",
+                    "username_selector": "#username",
+                    "password_selector": "#password",
+                    "username": "testuser",
+                    "password": "testpassword",
+                    "submit_selector": "#submit"
+                }
+            },
+            {
+                "Navigate": {
+                    "selector": ".product-list",
+                    "attribute": "href"
+                }
+            }
+        ]
+    },
+    {
+        "name": "Task 3",
+        "actions": [
+            {
+                "GoTo": {
+                    "url": "https://example.com/products"
+                }
+            },
+            {
+                "FillCheckbox": {
+                    "selector": "#agree-terms",
+                    "checked": true
+                }
+            },
+            {
+                "Click": {
+                    "selector": "#add-to-cart"
+                }
+            }
+        ]
+    },
+    {
+        "name": "Task 4",
+        "actions": [
+            {
+                "GoTo": {
+                    "url": "https://example.com/checkout"
+                }
+            },
+            {
+                "SelectDropdown": {
+                    "selector": "#shipping-method",
+                    "option": "Express"
+                }
+            },
+            {
+                "Input": {
+                    "selector": "#billing-address",
+                    "text": "123 Main St"
+                }
+            }
+        ]
+    },
+    {
+        "name": "Task 5",
+        "actions": [
+            {
+                "GoTo": {
+                    "url": "https://storage.googleapis.com/x/index.html"
+                }
+            },
+            {
+                "Extract": {
+                    "selector": "#rc-tabs-0-panel-1 > div:nth-child(1) > div > h4",
+                    "attribute": null
+                }
+            }
+        ]
+    }
+]
